@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FudByte Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="menu.css" />
+</head>
+<body class="bg-light">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://res.cloudinary.com/dkspz8wwt/image/upload/v1750755146/Screenshot_2025-06-24_142016_bhw1jn.png" alt="FudByte" style="height:40px; width:auto; margin-right:10px;">
+                <span class="font-weight-bold">FudByte</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Search</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filters -->
+    <div class="container mt-4">
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-light filter-btn border rounded-pill mr-2 mb-2" data-category="All">All</button>
+        <button class="btn btn-light filter-btn border rounded-pill mr-2 mb-2" data-category="Biryani">Biryani</button>
+        <button class="btn btn-light filter-btn border rounded-pill mr-2 mb-2" data-category="Pizza">Pizza</button>
+        <button class="btn btn-light filter-btn border rounded-pill mr-2 mb-2" data-category="Coffee">Coffee</button>
+        <button class="btn btn-light filter-btn border rounded-pill mr-2 mb-2" data-category="Pasta">Pasta</button>
+        <button class="btn btn-light filter-btn border rounded-pill mr-2 mb-2" data-category="Sandwich">Sandwich</button>
+        <button class="btn btn-light filter-btn border rounded-pill mr-2 mb-2" data-category="Noodles">Noodles</button>
+        <button class="btn btn-light filter-btn border rounded-pill mr-2 mb-2" data-category="Curry">Curry</button>
+        </div>
+    </div>
+
+   
+    <!-- Menu Grid -->
+    <div class="container">
+        <div class="row" id="menu-list">
+            <!-- Example Card -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card menu-card h-100 shadow-sm">
+                    <div class="menu-card-img-container">
+                        <img src="https://source.unsplash.com/400x300/?pizza" class="card-img-top" alt="Pizza Hut">
+                        <div class="menu-card-overlay">ITEMS AT ₹59</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Pizza Hut</h5>
+                        <div class="text-success font-weight-bold mb-1" style="font-size: 1rem;">
+                            <span>&#11044;</span> 4.2 · 50-55 mins
+                        </div>
+                        <div class="text-muted small">Pizzas</div>
+                        <div class="text-muted small">Parasia Road</div>
+                        <div class="mt-2 font-weight-bold">₹199</div>
+                        <button class="btn btn-sm btn-primary add-to-cart-btn"
+                            data-name="Pizza Hut"
+                            data-price="199"
+                            data-img="https://source.unsplash.com/400x300/?pizza">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards below, just copy and change details -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card menu-card h-100 shadow-sm">
+                    <div class="menu-card-img-container">
+                        <img src="https://source.unsplash.com/400x300/?coffee" class="card-img-top" alt="Indian Coffee House">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Indian Coffee House</h5>
+                        <div class="text-success font-weight-bold mb-1" style="font-size: 1rem;">
+                            <span>&#11044;</span> 4.4 · 45-50 mins
+                        </div>
+                        <div class="text-muted small">South Indian, Chinese, Fast Food</div>
+                        <div class="text-muted small">Khajri Chowk</div>
+                        <div class="mt-2 font-weight-bold">₹149</div>
+                        <button class="btn btn-sm btn-primary add-to-cart-btn" 
+                            data-name="Indian Coffee House" 
+                            data-price="149"
+                            data-img="https://source.unsplash.com/400x300/?coffee">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card menu-card h-100 shadow-sm">
+                    <div class="menu-card-img-container">
+                        <img src="https://source.unsplash.com/400x300/?pasta" class="card-img-top" alt="Pastas By Pizza Hut">
+                        <div class="menu-card-overlay">₹100 OFF ABOVE ₹199</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Pastas By Pizza Hut</h5>
+                        <div class="text-success font-weight-bold mb-1" style="font-size: 1rem;">
+                            <span>&#11044;</span> 3.7 · 50-55 mins
+                        </div>
+                        <div class="text-muted small">Pastas</div>
+                        <div class="text-muted small">Parasia Road</div>
+                        <div class="mt-2 font-weight-bold">₹179</div>
+                        <button class="btn btn-sm btn-primary add-to-cart-btn" 
+                            data-name="Pastas By Pizza Hut" 
+                            data-price="179"
+                            data-img="https://source.unsplash.com/400x300/?pasta">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card menu-card h-100 shadow-sm">
+                    <div class="menu-card-img-container">
+                        <img src="https://source.unsplash.com/400x300/?sandwich" class="card-img-top" alt="Tasty Talk">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Tasty Talk</h5>
+                        <div class="text-success font-weight-bold mb-1" style="font-size: 1rem;">
+                            <span>&#11044;</span> 3.4 · 45-50 mins
+                        </div>
+                        <div class="text-muted small">Chinese, Italian, Pizzas, Pastas</div>
+                        <div class="text-muted small">Chhindwara City</div>
+                        <div class="mt-2 font-weight-bold">₹129</div>
+                        <button class="btn btn-sm btn-primary add-to-cart-btn" 
+                            data-name="Tasty Talk" 
+                            data-price="129"
+                            data-img="https://source.unsplash.com/400x300/?sandwich">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+        <div class="text-right mb-4">
+            <a href="cart.html" class="btn btn-success">Go to Cart</a>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>

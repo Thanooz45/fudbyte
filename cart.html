@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FudByte Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="cart.css" />
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left: Address/Payment -->
+            <div class="col-lg-7 mb-4">
+                <div class="bg-white rounded shadow-sm p-4 mb-4">
+                    <h5>Add a delivery address</h5>
+                    <p class="text-muted mb-3">You seem to be in the new location</p>
+                    <div class="border rounded p-4 text-center mb-4">
+                        <div class="mb-2"><span role="img" aria-label="location">📍</span> Add New Address</div>
+                        <button class="btn btn-outline-success btn-sm">ADD NEW</button>
+                    </div>
+                    <h5>Payment</h5>
+                    <div class="border rounded p-4 text-center text-muted">
+                        Payment options will appear here.
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Cart Summary -->
+            <div class="col-lg-5">
+                <div class="cart-summary">
+                    <div id="cart-items"></div>
+                    <hr>
+                    <div id="cart-bill"></div>
+                    <a href="menu.html" class="btn btn-primary btn-block mt-3">Back to Menu</a>
+                    <button class="btn btn-primary btn-block mt-3">Pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
