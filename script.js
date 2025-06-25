@@ -33,7 +33,7 @@ signInForm.addEventListener("submit", function(event) {
         emailerrmsg.textContent = "";
         passerrmsg.textContent = "";
         // alert("login successful");
-        window.location.href="index.html";
+        window.location.href="mainpage.html";
     } else {
         emailerrmsg.textContent = "*Required";
         passerrmsg.textContent = "*Required";
